@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("one.js"),console.log("two.js")})();
+(()=>{"use strict";(()=>{const t=document.querySelectorAll('a[href*="#"]');for(let e of t)e.addEventListener("click",(function(t){t.preventDefault();const o=e.getAttribute("href").substr(1);document.getElementById(o).scrollIntoView({behavior:"smooth",block:"start"})}))})(),console.log("two.js")})();

@@ -1,7 +1,7 @@
-const twoModule = () => {
+const two = () => {
     const two = 'two.js';
     console.log(two);
 }
 
 //module.exports = twoModule;
-export default twoModule;
+export default two;
