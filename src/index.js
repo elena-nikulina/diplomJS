@@ -1,7 +1,7 @@
 //const one = require('./modules/one');
 //const two = require('./modules/two');
 import ancor from './modules/ancor';
-import two from './modules/two';
+import modal from './modules/modal';
 
 ancor();
-two();
+modal();
