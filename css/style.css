@@ -898,6 +898,17 @@ video#video_background {
 	z-index: 1;
 }
 
+.top-slider .item {
+	display: none;
+}
+
+.top-slider .item.item-active {
+	display: block;
+	/*opacity: 1;*/
+	/*opacity: 1;
+	visibility: visible;*/
+}
+
 @media only screen and (min-width: 768px) {
 	.top-slider .item {
 		height: 400px;

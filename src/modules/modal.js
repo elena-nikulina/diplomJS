@@ -9,7 +9,7 @@ const modal = () => {
     //console.log(modal1);
     //console.log(overlay);
     //console.log(callbackBtn);
-    console.log(modalClose);
+    //console.log(modalClose);
 
     for(let btn of callbackBtn) {
         if (btn.classList.contains('fancyboxModal')) {
