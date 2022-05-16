@@ -1,10 +1,14 @@
 const slider = () => {
+    
     const sliderBlock = document.querySelector('.top-slider');
     const slides = sliderBlock.querySelectorAll('.item');
     const tables = sliderBlock.querySelectorAll('.table');
     const timerInterval = 3000;
     let currentSlide = 0;
     let interval;
+    
+    slides[0].classList.add('item-active');
+    
     const prevSlide = (elems, index, strClass) => {
         elems[index].classList.remove(strClass);
     }
@@ -14,7 +18,7 @@ const slider = () => {
     const autoSlide = () => {
         prevSlide(slides, currentSlide, 'item-active');
         prevSlide(tables, currentSlide, 'active');
-        console.log('start');
+        //console.log('start');
         //prevSlide(dots, currentSlide, 'dot-active');
         currentSlide++;
         if (currentSlide >= slides.length) {
@@ -27,7 +31,7 @@ const slider = () => {
     }
 
     const startSlide = (timer = 1500) => {
-        console.log('!!!');
+        /*console.log('!!!');*/
         interval = setInterval(autoSlide, timer);
     }
 
