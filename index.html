@@ -20,7 +20,16 @@
 		rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- STYLESHEETS :: TEMPLATE -->
+	<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+/>
 	<link href="css/style.css" rel="stylesheet">
+	<!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+    <!-- Initialize Swiper -->
 	<script src="./dist/main.js" defer></script>
 </head>
 
@@ -160,9 +169,9 @@
 				<div class="push40"></div>
 
 
-				<div class="services-elements">
-					<div class="row services-carousel">
-						<div class="col-sm-6 col-md-4">
+				<div class="services-elements swiper">
+					<div class="row services-carousel swiper-wrapper">
+						<div class="col-sm-6 col-md-4 swiper-slide">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Аварийный выезд"></a>
@@ -179,7 +188,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-6 col-md-4 swiper-slide">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Монтаж или замена электропроводки"></a>
@@ -196,7 +205,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-6 col-md-4 swiper-slide">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Ремонт, замена, перенос розеток"></a>
@@ -213,7 +222,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-6 col-md-4 swiper-slide">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Замена электросчетчика"></a>
@@ -230,7 +239,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-6 col-md-4 swiper-slide">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Установка, замена люстры"></a>
@@ -247,7 +256,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-6 col-md-4 swiper-slide">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Установка светильников"></a>
@@ -265,12 +274,22 @@
 							</div>
 						</div>
 					</div>
+					
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					
+					
 				</div>
 
-				<div class="services-arrow">
-					<img class="arrow-left" src="images/right-arrow_1.svg" alt="arrow-left">
-					<img class="arrow-right" src="images/right-arrow_1.svg" alt="arrow-right">
-				</div>
+				<!--<div class="services-arrow">-->
+					<!--<div class="swiper-button-prev">-->
+						<!--<img class="arrow-left" src="images/right-arrow_1.svg" alt="arrow-left">-->
+					<!--</div>-->
+					<!--<div class="swiper-button-next">-->
+						<!--<img class="arrow-right" src="images/right-arrow_1.svg" alt="arrow-right">-->
+					<!--</div>-->
+					
+				<!--</div>-->
 
 			</div>
 			<div class="push70"></div>

@@ -3,13 +3,20 @@ const modal = () => {
     const overlay = document.querySelector('.modal-overlay');
     const callbackBtn = document.querySelectorAll('.callback-btn');
     const modalClose = modal1.querySelector('.modal-close');
+    const buttonServices = document.querySelector('.button-services');
 
     //let isOpen = false;
-
+    console.log(buttonServices);
     //console.log(modal1);
     //console.log(overlay);
     //console.log(callbackBtn);
     //console.log(modalClose);
+    buttonServices.classList.remove('fancyboxModal');
+
+    buttonServices.addEventListener('click', () => {
+        modal1.style.display = 'block';
+        overlay.style.display = 'block';
+    });
 
     for(let btn of callbackBtn) {
         if (btn.classList.contains('fancyboxModal')) {

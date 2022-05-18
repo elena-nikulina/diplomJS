@@ -1101,8 +1101,51 @@ video#video_background {
 	margin-left: 20px;
 }
 
+.swiper-button-prev {
+	top: 98%;
+	left: 45%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transform: rotate(180deg);
+	margin-right: 20px;
+	position: absolute;
+	z-index: 2;
+}
+
+.swiper-button-next {
+	top: 98%;
+	left: 48%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin-left: 20px;
+	position: absolute;
+	z-index: 2;
+}
+
+.swiper-button-prev:after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	/*background-color: #592330;*/
+	background-image: url(../images/right-arrow_1.svg);
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper-button-next:after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	/*background-color: #592330;*/
+	background-image: url(../images/right-arrow_1.svg);
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
 .services-section .element {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 .services-section .element .element-content {
 	padding: 20px;
