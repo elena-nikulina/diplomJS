@@ -15,5 +15,5 @@ const ancor = () => {
 
 }
 
-//module.exports = oneModule;
+
 export default ancor;

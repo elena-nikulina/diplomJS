@@ -1,10 +1,10 @@
-import Swiper from 'swiper';
+import Swiper, { Navigation, Autoplay } from 'swiper';
 
 const swiper = () => {
-    //console.log('swiper');
 
     const swiper = new Swiper('.swiper', {
-
+      modules: [Navigation, Autoplay],
+      speed: 500,
         loop: true,
         slidesPerView: 3,
         //spaceBetween: 10,

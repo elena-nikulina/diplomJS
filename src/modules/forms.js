@@ -1,13 +1,10 @@
 const forms = () => {
-    //console.log('forms');
-    //const form = document.getElementById(formId);
+
     const modal1 = document.querySelector('.modal-callback');
     const form1 = modal1.querySelector('form');
     const inputName = form1.querySelector('.form-control');
     const inputPhone = form1.querySelector('.form-control.tel');
-    //console.log(form1);
-    //console.log(inputName);
-    //console.log(inputPhone);
+
 
     inputName.addEventListener('input', (e) => {
 
@@ -68,17 +65,6 @@ const forms = () => {
 
         formData.forEach((val, key) => {
             formBody[key] = val;
-        });
-
-        someElem.forEach(elem => {
-            const element = document.getElementById(elem.id);
-            if(elem.type === 'block') {
-                formBody[elem.id] = element.textContent;
-
-            } else if(elem.type === 'input') {
-                formBody[elem.id] = element.value;
-            }
-
         });
 
         if (valid(formElements)) {
