@@ -6,6 +6,7 @@ import slider from './modules/slider';
 import accordeon from './modules/accordeon';
 import swiper from './modules/swiper';
 import scroll from './modules/scroll';
+import forms from './modules/forms';
 
 ancor();
 modal();
@@ -13,3 +14,4 @@ slider();
 accordeon();
 swiper();
 scroll();
+forms();
