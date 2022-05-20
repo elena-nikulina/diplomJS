@@ -23,6 +23,12 @@ const forms = () => {
     const errorText = 'Ошибка...';
     const successText = 'Спасибо! Наш менеджер с вами свяжется.';
 
+    function sayBy() {
+        statusBlock.style.display = 'none';
+      }
+      
+     
+
     const valid = (list) => {
 
         let success = true;
@@ -72,6 +78,7 @@ const forms = () => {
                 .then(data => {
                
                 statusBlock.textContent = successText;
+                setTimeout(sayBy, 10000);
                 formElements.forEach(input => {
                     //console.dir(input);
                     if (input.type === "submit") {
