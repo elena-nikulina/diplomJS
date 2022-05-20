@@ -73,7 +73,8 @@ const forms = () => {
                
                 statusBlock.textContent = successText;
                 formElements.forEach(input => {
-                    if (input[type="submit"]) {
+                    //console.dir(input);
+                    if (input.type === "submit") {
                         return;
                     } else {
                         input.value = '';

@@ -9,11 +9,11 @@ const modal = () => {
     //console.log(hoverClick);
     for(let hoverClick of hoverClicks) {
         hoverClick.classList.remove('fancyboxModal');
-    console.log(hoverClick);
+    //console.log(hoverClick);
 
     hoverClick.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('click!');
+        //console.log('click!');
         modal1.style.display = 'block';
         overlay.style.display = 'block';
     });
