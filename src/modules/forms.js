@@ -30,7 +30,7 @@ const forms = () => {
 
         list.forEach(input => {
             if (input.classList.contains('form-name')) {
-                if (/[^а-яА-Я+]+/g.test(input)) {
+                if (/^[а-яА-Я+]+/g.test(input)) {
                     success = false;
                     alert('Имя не валидно!');
                 } 
@@ -73,7 +73,12 @@ const forms = () => {
                
                 statusBlock.textContent = successText;
                 formElements.forEach(input => {
-                    input.value = '';
+                    if (input[type="submit"]) {
+                        return;
+                    } else {
+                        input.value = '';
+                    }
+                    
                 });
             })
                 .catch(error => {

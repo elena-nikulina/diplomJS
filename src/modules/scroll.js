@@ -3,18 +3,13 @@ const scroll = () => {
     const up = document.querySelector('.up');
 
 
-    up.onclick = function() {
-        window.scrollTo(pageXOffset, 0);
+    up.addEventListener('click', (e) => {
+      window.scrollTo(0, 0);
+    });
 
-      };
+      document.addEventListener('scroll', function() {
+        up.hidden = (window.pageYOffset < document.documentElement.clientHeight);
 
-      window.addEventListener('scroll', function() {
-        up.hidden = (pageYOffset < document.documentElement.clientHeight);
-
-        up.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-          });
       });
 }
 
