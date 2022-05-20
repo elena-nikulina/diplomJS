@@ -4,7 +4,22 @@ const modal = () => {
     const callbackBtn = document.querySelectorAll('.callback-btn');
     const modalClose = modal1.querySelector('.modal-close');
     const buttonServices = document.querySelector('.button-services');
+    const hoverClicks = document.querySelectorAll('.services-section .swiper-slide a');
 
+    //console.log(hoverClick);
+    for(let hoverClick of hoverClicks) {
+        hoverClick.classList.remove('fancyboxModal');
+    console.log(hoverClick);
+
+    hoverClick.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('click!');
+        modal1.style.display = 'block';
+        overlay.style.display = 'block';
+    });
+
+    }
+    
  
     buttonServices.classList.remove('fancyboxModal');
 
